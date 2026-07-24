@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-background: #FFFCF7;
+    --btn-clr:#ebb54a;
+    --blur-clr:#ffda9a;
+    --text-clr:#5f3e30;
+}
+
+body{
+    background: var(--main-background);
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    height: 13vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo i{
+    background: var(--btn-clr);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: rgb(56, 46, 46);
+}
+
+.left-header{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navbar .logo span{
+    font-size: 2rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+}
+
+.fill-btn{
+    background: var(--btn-clr);
+    border: none;
+    padding: .7rem 1.4rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    border: 2px solid var(--btn-clr);
+    transition: .2s ease-in-out;
+}
+
+.fill-btn:hover{
+    background: transparent;
+    border: 2px solid var(--btn-clr);
+}
+
+.left-header i{
+    background: var(--main-background);
+    border: .1em solid var(--btn-clr);
+    border-radius: 50%;
+    font-size: 1.3rem;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    line-height: 43px;
+}
+
+.left-header i:hover{
+    color: red;
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
+.links{
+    position: relative;
+    font-size: 1rem;
+    color: var(--text-clr);
+    font-weight: 500;
+}
+
+.links::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 50%;
+    bottom: -10%;
+    height: .12rem;
+    background: var(--text-clr);
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: .3s ease-in-out;
+}
+
+.links:hover:before{
+    width: 100%;
+}
+
+.header-section{
+    height: calc(100vh - 13vh);
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.header-section h1{
+    font-size: 4rem;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.header-section p{
+    font-family: .99rem;
+    opacity: 0.78;
+    padding: 2rem 0;
+    max-width: 550px;
+}
+
+.btn-section{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.border-btn{
+    background: var(--main-background);
+    border: none;
+    padding: .7rem 1.8rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid var(--btn-clr);
+    transition: .3s ease-in-out;
+}
+
+.border-btn:hover{
+    background: var(--btn-clr);
+}
+
+.image-section{
+    display: flex;
+    gap: 2rem;
+}
+
+.image-slider{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.mini-image-box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 0 .5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border: 2px solid var(--text-clr);
+}
+
+.mini-image-box.active{
+    background: var(--btn-clr);
+    color: var(--text-clr);
+    transform: scale(1.05);
+}
+
+.mini-image{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+}
+
+.mini-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.image-box{
+    margin: 3rem 3rem 0 0 ;
+    width: 23rem;
+}
+
+.image-box img{
+    width: 100%;
+}
+/* Plate continuous rotation effect */
+.rotating-plate {
+    border-radius: 50%;
+    animation: rotatePlate 20s linear infinite;
+    transition: transform 0.5s ease-in-out;
+}
+
+@keyframes rotatePlate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Optional: Side menu item style when clicked/active */
+.mini-image-box {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mini-image-box:hover {
+    transform: translateY(-2px);
+}
