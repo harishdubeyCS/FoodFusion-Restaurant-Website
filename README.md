@@ -54,7 +54,8 @@ No installation or additional packages are required.
 
 ## 📸 Preview
 
-![Preview](preview/preview1.jpg)
+![TastyBites-Restaurant-Website-Preview](preview/preview1.png)
+
 
 
 ## 💡 Future Improvements
