@@ -1,32 +1,54 @@
-# 🍽️ TastyBites - Restaurant Landing Page
+# 🍽️ FoodFusion - Modern Restaurant Landing Page
 
-A modern and responsive **Restaurant Landing Page** built using **HTML, CSS, and JavaScript**. The project features an attractive hero section with a rotating food plate, interactive category slider, and clean UI design.
+A modern and responsive **Restaurant Landing Page** built using **HTML, CSS, and JavaScript**. This project showcases an attractive UI with interactive components, smooth animations, and dynamic content rendering using JavaScript.
+
+
+
+## 📸 Preview
+
+![FoodFusion Preview](preview/preview1.png)
+
+---
+
+![FoodFusion Preview](preview/preview2.png)
+
+---
+
+![FoodFusion Preview](preview/preview3.png)
+
 
 ## ✨ Features
 
-* 🍕 Interactive food category slider
-* 🍔 Dynamic image switching using JavaScript
-* 🍰 Continuous rotating plate animation
-* 🎨 Modern and responsive UI
-* ❤️ Hover effects and smooth transitions
-* 📱 Clean and organized layout
-* ⚡ Lightweight and beginner-friendly project
+- 🍔 Dynamic Popular Dishes section generated using JavaScript
+- 🍕 Interactive food category slider
+- 🍽️ Rotating hero food plate animation
+- 🎯 Custom horizontal card slider with navigation arrows
+- ⭐ Dynamic star ratings
+- 🛒 Add to Cart buttons
+- 🎨 Modern UI with hover animations and glass-like card effects
+- ⚡ Smooth transitions and animations
+- 📱 Responsive layout
+- 🧩 Clean and organized code structure
+
+---
 
 ## 🛠️ Technologies Used
 
-* HTML5
-* CSS3
-* JavaScript (ES6)
+- HTML5
+- CSS3
+- JavaScript (ES6)
+
+---
 
 ## 📂 Project Structure
 
 ```text
-TastyBites/
+FoodFusion/
 │
 ├── index.html
 ├── README.md
 │
-├── css/
+├── style/
 │   └── style.css
 │
 ├── js/
@@ -38,37 +60,45 @@ TastyBites/
 │   ├── platter.png
 │   ├── drink.png
 │   ├── cake.png
-│   └── (other food images)
+│   ├── chickenBiryani.png
+│   ├── pasta.png
+│   ├── french fries.png
+│   ├── chicken shawarma.png
+│   └── ...
 │
 └── preview/
-    ├── preview1.png
+    └── preview1.png
 ```
 
-## 🚀 How to Run
+---
 
-1. Download or clone the repository.
-2. Open the project folder.
-3. Open **index.html** in your browser.
+## 🎯 What I Learned
 
-No installation or additional packages are required.
+- DOM Manipulation
+- JavaScript Arrays & Objects
+- Dynamic HTML Rendering
+- Event Handling
+- CSS Flexbox
+- CSS Grid
+- CSS Animations
+- Hover Effects
+- Custom Card Slider Logic
+- Responsive Web Design
 
-## 📸 Preview
-
-![TastyBites-Restaurant-Website-Preview](preview/preview1.png)
-
-
-
-## 💡 Future Improvements
-
-* Coming Soon
+---
 
 ## 👨‍💻 Author
 
 **Harish Dubey**
 
-* Aspiring Java Full Stack Developer
-* Learning HTML, CSS, JavaScript, React, Spring Boot & DSA
+Currently Learning:
+
+- HTML
+- CSS
+- JavaScript
 
 ---
 
-⭐ If you like this project, don't forget to give it a **Star** on GitHub.
+## ⭐ Support
+
+If you like this project, consider giving it a **⭐ Star** on GitHub.
