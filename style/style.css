@@ -28,12 +28,22 @@ a{
     text-decoration: none;
 }
 
-.navbar{
-    height: 13vh;
+.sidewidth{
     width: 90%;
     margin: auto;
+}
+
+.marginTopBottom{
+    padding: 4rem 0 4rem 0;
+}
+
+.flex{
     display: flex;
     align-items: center;
+}
+
+.navbar{
+    height: 13vh;
     justify-content: space-between;
 }
 
@@ -49,15 +59,11 @@ a{
 }
 
 .left-header{
-    display: flex;
     gap: 3rem;
-    align-items: center;
     justify-content: space-evenly;
 }
 
 .navlist{
-    display: flex;
-    align-items: center;
     gap: 3rem;
 }
 
@@ -100,8 +106,6 @@ a{
 }
 
 .left-side{
-    display: flex;
-    align-items: center;
     justify-content: center;
     gap: 1.4rem;
 }
@@ -132,18 +136,14 @@ a{
 
 .header-section{
     height: calc(100vh - 13vh);
-    display: flex;
-    align-items: center;
-    width: 90%;
-    margin: auto;
 }
 
-.header-section h1{
+.heading{
     font-size: 4rem;
     font-family: "Ubuntu", sans-serif;
 }
 
-.header-section p{
+.para{
     font-family: .99rem;
     opacity: 0.78;
     padding: 2rem 0;
@@ -151,8 +151,6 @@ a{
 }
 
 .btn-section{
-    display: flex;
-    align-items: center;
     gap: 1rem;
 }
 
@@ -172,27 +170,27 @@ a{
 }
 
 .image-section{
-    display: flex;
     gap: 2rem;
 }
 
 .image-slider{
-    display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
 .mini-image-box{
-    display: flex;
-    align-items: center;
     gap: 1rem;
     background: white;
-    padding: 0 .5rem;
+    padding: 0 0 0 .5rem;
     border-radius: 50px;
     cursor: pointer;
     transition: .3s;
     box-shadow: 0 5px 15px rgba(0,0,0,.1);
     border: 2px solid var(--text-clr);
+    width: 200px;
+    height: 65px;
+    justify-content: flex-start;
+    flex-shrink: 0;
 }
 
 .mini-image-box.active{
@@ -220,6 +218,7 @@ a{
 .image-box img{
     width: 100%;
 }
+
 /* Plate continuous rotation effect */
 .rotating-plate {
     border-radius: 50%;
@@ -244,4 +243,150 @@ a{
 
 .mini-image-box:hover {
     transform: translateY(-2px);
+}
+
+.service-section{
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.service-section  h1{
+    font-size: 3rem;
+}
+
+.service-section .image-box{
+    width: 34rem;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+    max-width: 650px;
+    align-items: center;
+}
+
+.service{
+    gap: 5px;
+}
+
+.service-section .content .fill-btn{
+    margin-top: 3rem;
+}
+
+.service-main-image{
+    position: relative;
+}
+
+.service-main-image::before{
+    position: absolute;
+    content: "";
+    top: -15%;
+    right: -10%;
+    z-index: 3;
+    background-image: url("../images/sideSalad.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+}
+
+.service-main-image::after{
+    position: absolute;
+    content: "";
+    bottom: -15%;
+    left: -10%;
+    z-index: 3;
+    background-image: url("../images/sidePaneer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+}
+
+.popular-dishes-section{
+    height: 100vh;
+}
+
+.popular-dishes-header{
+    justify-content: space-between;
+}
+
+.popular-dishes-header h2{
+    font-size: 2rem;
+}
+
+.slide{
+    gap: 1rem;
+}
+
+.slide i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--btn-clr);
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1rem;
+    border: 2px solid var(--btn-clr);
+    border-radius: 50%;
+}
+
+.popular-dishes-cards{
+    display: flex;
+    gap: 20px;
+    padding-top: 2rem;
+    transition: transform .5s ease;
+}
+
+.popular-wrapper{
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.popular-dishes-cards .card{
+    flex-shrink: 0;
+    min-width: unset;
+    background: var(--main-background);
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 .5rem 2rem .5rem;
+    transition: .3s ease-in-out;
+    border: 1px solid var(--btn-clr);
+    flex: 0 0 calc((120% - 40px) / 5);
+}
+
+
+.popular-dishes-cards .card:hover{
+    transform: translateY(-6px);
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.18),
+        0 8px 15px rgba(235,181,74,.18),
+        inset 2px 2px 8px rgba(255,255,255,.9),
+        inset -2px -2px 8px rgba(0,0,0,.08);
+}
+
+.popular-image-box{
+    width: 15rem;
+    height: 15rem;
+}
+
+.popular-image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
 }

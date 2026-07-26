@@ -13,13 +13,13 @@
 
 <body>
     <div class="container">
-        <nav class="navbar">
+        <nav class="navbar sidewidth flex">
             <div class="logo">
                 <i class="fa-solid fa-utensils"></i>
-                <span>Bites</span>
+                <span>FoodFusion</span>
             </div>
-            <div class="left-header">
-                <ul class="navlist">
+            <div class="left-header flex">
+                <ul class="navlist flex">
                     <li>
                         <a href="#" class="links">About Us</a>
                     </li>
@@ -36,59 +36,87 @@
                         <a href="#" class="links">Contacts</a>
                     </li>
                 </ul>
-                <div class="left-side">
+                <div class="left-side flex">
                     <i class="fa-regular fa-heart"></i>
                     <button class="fill-btn">Reserve Table</button>
                 </div>
             </div>
         </nav>
 
-        <div class="header-section">
+        <div class="header-section sidewidth flex">
             <div class="content">
-                <h1>We Serve The Taste You Love</h1>
-                <p>This is a type of restaurant which typically serves food and drinks, in addition to light
-                    refreshments such as baked goods or snacks. The term comes from the French word meaning food.</p>
-                <div class="btn-section">
+                <h1 class="heading">We Serve The Taste You Love</h1>
+                <p class="para">FoodFusion is a modern restaurant dedicated to serving freshly prepared meals,
+                    handcrafted beverages, delicious desserts, and flavorful snacks. We combine quality ingredients with
+                    exceptional service to create a warm and enjoyable dining experience for every guest, whether
+                    they're visiting for a quick bite or a full-course meal.
+                </p>
+                <div class="btn-section flex">
                     <button class="fill-btn">Explore Food</button>
                     <button class="border-btn">More Info</button>
                 </div>
             </div>
-            <div class="image-section">
+            <div class="image-section flex">
                 <div class="image-box">
                     <img id="mainImage" class="rotating-plate">
                 </div>
-                <div id="imageSlider" class="image-slider">
-                    <!-- <div class="mini-image-box">
-                        <div class="mini-image">
-                            <img src="images/dish.png">
-                        </div>
-                        <h4 class="mini-image-content">Dishes</h4>
-                    </div>
-                    <div class="mini-image-box">
-                        <div class="mini-image">
-                            <img src="images/drink.png">
-                        </div>
-                        <h4 class="mini-image-content">Drinks</h4>
-                    </div>
-                    <div class="mini-image-box">
-                        <div class="mini-image">
-                            <img src="images/snack.png">
-                        </div>
-                        <h4 class="mini-image-content">Snacks</h4>
-                    </div>
-                    <div class="mini-image-box">
-                        <div class="mini-image">
-                            <img src="images/platter.png">
-                        </div>
-                        <h4 class="mini-image-content">Platter</h4>
-                    </div>
-                    <div class="mini-image-box">
-                        <div class="mini-image">
-                            <img src="images/cake.png">
-                        </div>
-                        <h4 class="mini-image-content">Desserts</h4>
-                    </div> -->
+                <div id="imageSlider" class="image-slider flex">
                 </div>
+            </div>
+        </div>
+
+        <div class="popular-dishes-section sidewidth marginTopBottom">
+            <div class="popular-dishes-header flex">
+                <h2>Popular Dishes</h2>
+                <div class="slide flex">
+                    <i class="fa-solid fa-arrow-left" id="prev"></i>
+                    <i class="fa-solid fa-arrow-right" id="next"></i>
+                </div>
+            </div>
+
+            <div class="popular-wrapper">
+                <div class="popular-dishes-cards" id="popularCards"></div>
+            </div>
+
+        </div>
+
+        <div class="service-section sidewidth flex marginTopBottom">
+            <div class="image-box service-main-image">
+                <img src="images/chef.png" alt="">
+            </div>
+            <div class="content">
+                <h1 class="heading">We Are More Than Multiple Services</h1>
+                <p class="para">At FoodFusion, we bring together a wide selection of flavorful dishes, refreshing
+                    beverages, freshly baked treats, and satisfying snacks. Every item is prepared with quality
+                    ingredients and a passion for great taste, creating a memorable dining experience for every guest.
+                </p>
+                <div class="services">
+                    <div class="service flex">
+                        <i class="fa-solid fa-signal"></i>
+                        <h3>Online Order</h3>
+                    </div>
+                    <div class="service flex">
+                        <i class="fa-solid fa-hotel"></i>
+                        <h3>Pre-Reservation</h3>
+                    </div>
+                    <div class="service flex">
+                        <i class="fa-solid fa-hourglass-half"></i>
+                        <h3>24/7 Service</h3>
+                    </div>
+                    <div class="service flex">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <h3>Organized Foodie Place</h3>
+                    </div>
+                    <div class="service flex">
+                        <i class="fa-solid fa-kitchen-set"></i>
+                        <h3>Clean Kitchen</h3>
+                    </div>
+                    <div class="service flex">
+                        <i class="fa-solid fa-person-circle-check"></i>
+                        <h3>Super Chefs</h3>
+                    </div>
+                </div>
+                <button class="fill-btn">Book Service</button>
             </div>
         </div>
     </div>
