@@ -3,19 +3,30 @@
 A modern and responsive **Restaurant Landing Page** built using **HTML, CSS, and JavaScript**. This project showcases an attractive UI with interactive components, smooth animations, and dynamic content rendering using JavaScript.
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49f0df3bc66eb9f6154d74302096083e38b14781
 ## 📸 Preview
 
 ![FoodFusion Preview](preview/preview1.png)
 
 ---
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49f0df3bc66eb9f6154d74302096083e38b14781
 ![FoodFusion Preview](preview/preview2.png)
 
 ---
 
 ![FoodFusion Preview](preview/preview3.png)
 
+<<<<<<< HEAD
+=======
+---
+
+>>>>>>> 49f0df3bc66eb9f6154d74302096083e38b14781
 
 ## ✨ Features
 
@@ -72,6 +83,10 @@ FoodFusion/
 
 ---
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 49f0df3bc66eb9f6154d74302096083e38b14781
 ## 🎯 What I Learned
 
 - DOM Manipulation
@@ -91,12 +106,21 @@ FoodFusion/
 
 **Harish Dubey**
 
+<<<<<<< HEAD
+=======
+Aspiring Java Full Stack Developer
+
+>>>>>>> 49f0df3bc66eb9f6154d74302096083e38b14781
 Currently Learning:
 
 - HTML
 - CSS
 - JavaScript
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 49f0df3bc66eb9f6154d74302096083e38b14781
 ---
 
 ## ⭐ Support
