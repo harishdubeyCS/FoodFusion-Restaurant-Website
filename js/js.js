@@ -21,7 +21,7 @@ const foods = [
     }
 ];
 
-const popularFoods = [
+const foodMenu = [
     {
         name: "Chicken Biryani",
         image: "images/chickenBiryani.png",
@@ -108,111 +108,102 @@ const popularFoods = [
     }
 ];
 
-
-
 const slider = document.getElementById("imageSlider");
 const mainImage = document.getElementById("mainImage");
-const popularCards = document.getElementById("popularCards");
+const slideCards = document.getElementById("sliderCards");
+const slidePrev = document.getElementById("prev");
+const slideNext = document.getElementById("next");
 
 mainImage.src = foods[0].image;
 
-foods.forEach((food, index) => {
+function circleSlider() {
+    foods.forEach((food, index) => {
 
-    const box = document.createElement("div");
-    box.className = "mini-image-box flex";
+        const box = document.createElement("div");
+        box.className = "mini-image-box flex";
 
-    if(index === 0){
-        box.classList.add("active");
-    }
+        if (index === 0) {
+            box.classList.add("active");
+        }
 
-    box.innerHTML = `
+        box.innerHTML = `
         <div class="mini-image">
             <img src="${food.image}">
         </div>
         <h4>${food.name}</h4>
     `;
 
-    box.addEventListener("click", () => {
+        box.addEventListener("click", () => {
 
-        mainImage.src = food.image;
+            mainImage.src = food.image;
 
-        document.querySelectorAll(".mini-image-box").forEach(card=>{
-            card.classList.remove("active");
+            document.querySelectorAll(".mini-image-box").forEach(card => {
+                card.classList.remove("active");
+            });
+
+            box.classList.add("active");
+
         });
 
-        box.classList.add("active");
+        slider.appendChild(box);
 
     });
+}
 
-    slider.appendChild(box);
-
-});
-
-popularFoods.forEach(food => {
-
-    const card = document.createElement("div");
-    card.className = "card";
-
-    card.innerHTML = `
-        <div class="popular-image-box">
-            <img src="${food.image}">
+function foodmenuSlider() {
+    foodMenu.forEach(food => {
+        const card = document.createElement("div");
+        card.setAttribute("class", "card");
+        card.innerHTML = `
+        <div class="card-image">
+            <img src="${food.image}" alt="${food.name}">
         </div>
-
-        <div class="popular-dishes-content">
-            <h4>${food.name}</h4>
-
-            <div class="rating">
-                ${'<i class="fa-solid fa-star"></i>'.repeat(food.rating)}
+        <div class="card-content">
+            <div class="card-name">${food.name}</div>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
             </div>
-
-            <p class="para">
-                ${food.description}
-            </p>
-
-            <div class="rate">
-                <span class="price">${food.price}</span>
-                <button class="border-btn">Add To Cart</button>
-            </div>
+            <p class="card-des">${food.description}</p>
+        </div>
+        <div class="card-rate flex">
+            <span class="price">$${food.price}</span>
+            <button class="add-btn">Add To Cart</button>
         </div>
     `;
+        slideCards.append(card);
+    })
+}
 
-    popularCards.append(card);
+function initFoodSlider() {
+    
+    foodmenuSlider();
 
-});
+    let sliderIndex = 0;
+    const visibleCards = 4;
+    const cardWidth = document.querySelector(".card").offsetWidth + 20;
+    const maxIndex = foodMenu.length - visibleCards;
 
-const next = document.getElementById("next");
-const prev = document.getElementById("prev");
-
-let currentIndex = 0;
-
-const card = document.querySelector(".card");
-const gap = 20;
-
-const cardWidth = card.offsetWidth + gap;
-
-next.addEventListener("click", () => {
-
-    const maxSlide = popularFoods.length - 4;
-
-    if(currentIndex < maxSlide){
-        currentIndex++;
+    function updateSlider() {
+        slideCards.style.transform =
+            `translateX(-${sliderIndex * cardWidth}px)`;
     }
 
-    popularCards.style.transform =
-    `translateX(-${currentIndex * cardWidth}px)`;
+    slideNext.addEventListener("click", () => {
+        if (sliderIndex < maxIndex) {
+            sliderIndex++;
+            updateSlider();
+        }
+    });
 
-});
+    slidePrev.addEventListener("click", () => {
+        if (sliderIndex > 0) {
+            sliderIndex--;
+            updateSlider();
+        }
+    });
+}
 
-prev.addEventListener("click", () => {
-
-    if(currentIndex > 0){
-        currentIndex--;
-    }
-
-    popularCards.style.transform =
-    `translateX(-${currentIndex * cardWidth}px)`;
-
-});
-
-
-
+initFoodSlider();
+circleSlider();
