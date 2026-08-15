@@ -1,44 +1,111 @@
 # 🍽️ FoodFusion - Modern Restaurant Landing Page
 
-A modern and responsive **Restaurant Landing Page** built using **HTML, CSS, and JavaScript**. This project showcases an attractive UI with interactive components, smooth animations, and dynamic content rendering using JavaScript.
+FoodFusion is a **modern and responsive restaurant landing page** built using **HTML, CSS, and JavaScript**. The project focuses on a clean UI, smooth animations, interactive food sliders, dynamic menu rendering, and a premium restaurant experience.
 
-
-## 📸 Preview
-
-![FoodFusion Preview](preview/preview1.png)
+It is designed as a scalable frontend project and will continue evolving with features like **food search, category filters, add-to-cart functionality, LocalStorage, API integration, and customer testimonials**.
 
 ---
 
-![FoodFusion Preview](preview/preview2.png)
+## 🚀 Live Preview
+
+🔗 **GitHub Repository:** https://github.com/harishdubeyCS/FoodFusion-Restaurant-Website
 
 ---
 
-![FoodFusion Preview](preview/preview3.png)
+# 📸 Preview
 
-## ✨ Features
+## 🏠 Hero Section
 
-- 🍔 Dynamic Popular Dishes section generated using JavaScript
-- 🍕 Interactive food category slider
-- 🍽️ Rotating hero food plate animation
-- 🎯 Custom horizontal card slider with navigation arrows
-- ⭐ Dynamic star ratings
-- 🛒 Add to Cart buttons
-- 🎨 Modern UI with hover animations and glass-like card effects
-- ⚡ Smooth transitions and animations
-- 📱 Responsive layout
-- 🧩 Clean and organized code structure
+![Hero Section](preview/preview1.png)
 
 ---
 
-## 🛠️ Technologies Used
+## 🍕 Popular Dishes Section
 
-- HTML5
-- CSS3
-- JavaScript (ES6)
+![Food Menu](preview/preview2.png)
 
 ---
 
-## 📂 Project Structure
+## 👨‍🍳 Services Section
+
+![Services](preview/preview3.png)
+
+---
+
+## 📅 Reserve Table Section
+
+![Reservation](preview/preview4.png)
+
+---
+
+## 📱 Download App Section
+
+![Download App](preview/preview5.png)
+
+---
+
+## 🦶 Footer Section
+
+![Footer](preview/preview6.png)
+
+---
+
+# ✨ Features
+
+### 🎨 Modern UI Design
+
+* Clean restaurant-themed interface
+* Soft color palette
+* Rounded components
+* Smooth hover effects
+
+### 🍽️ Dynamic Food Menu
+
+* Menu cards generated using JavaScript
+* Reusable data structure
+* Dynamic DOM rendering
+
+### 🖼️ Interactive Hero Slider
+
+* Vertical food category selector
+* Active item highlighting
+* Main food image switching
+* Rotating plate animation
+
+### 🎠 Food Carousel
+
+* Previous/Next navigation
+* Smooth horizontal sliding
+* Responsive card layout
+
+### 📱 Responsive Layout
+
+* Flexible sections
+* Grid and Flexbox based design
+* Mobile-friendly structure
+
+### 🎯 Animated Components
+
+* Button hover animations
+* Navigation underline effects
+* Card interactions
+* Image transitions
+
+---
+
+# 🛠️ Tech Stack
+
+| Technology        | Usage                            |
+| ----------------- | -------------------------------- |
+| HTML5             | Structure                        |
+| CSS3              | Styling & Layout                 |
+| JavaScript (ES6+) | Dynamic Rendering & Interactions |
+| Font Awesome      | Icons                            |
+| Google Fonts      | Typography                       |
+
+---
+
+# 📂 Project Structure
 
 ```text
 FoodFusion/
@@ -60,44 +127,152 @@ FoodFusion/
 │   ├── cake.png
 │   ├── chickenBiryani.png
 │   ├── pasta.png
-│   ├── french fries.png
-│   ├── chicken shawarma.png
+│   ├── chef.png
+│   ├── Download.png
 │   └── ...
 │
 └── preview/
-    └── preview1.png
+    ├── hero-section.png
+    ├── food-menu.png
+    ├── services.png
+    ├── reservation.png
+    ├── download-app.png
+    └── footer.png
 ```
 
 ---
 
-## 🎯 What I Learned
+# 💡 JavaScript Functionality
 
-- DOM Manipulation
-- JavaScript Arrays & Objects
-- Dynamic HTML Rendering
-- Event Handling
-- CSS Flexbox
-- CSS Grid
-- CSS Animations
-- Hover Effects
-- Custom Card Slider Logic
-- Responsive Web Design
+The project currently includes:
+
+* Dynamic food category rendering
+* Hero image switching
+* Active category selection
+* Popular dishes card generation
+* Horizontal food slider
+* Previous/Next navigation controls
 
 ---
 
-## 👨‍💻 Author
+# 📌 Upcoming Features (Future Improvements)
+
+The project will be upgraded with the following features:
+
+## 🔍 Food Search
+
+* Search food by name
+* Instant filtering
+* Real-time results
+
+## 🏷️ Category Filter
+
+* Dishes
+* Snacks
+* Drinks
+* Desserts
+* Platters
+
+## 🛒 Shopping Cart
+
+* Add to Cart
+* Remove from Cart
+* Quantity controls
+* Cart total
+* Cart sidebar
+
+## 💾 LocalStorage
+
+* Persist cart items
+* Save user selections
+* Remember favorites
+* Maintain cart after page refresh
+
+## ⭐ Dynamic Ratings
+
+* Generate star ratings from data
+* Multiple rating support
+
+## 📢 Testimonials Section
+
+* Customer reviews
+* Profile images
+* Rating display
+* Auto slider
+
+## 📱 Mobile Optimization
+
+* Better responsive navigation
+* Touch-friendly sliders
+* Improved spacing
+
+## 🌐 API Integration
+
+* Fetch food data from API
+* Dynamic menu updates
+* Loading states
+* Error handling
+
+## ❤️ Wishlist System
+
+* Favorite foods
+* Wishlist storage
+* Heart icon interaction
+
+## 📅 Reservation Form
+
+* Table booking
+* Date & time selection
+* Guest count
+* Validation
+
+## 📈 Performance Improvements
+
+* Lazy loading
+* Optimized images
+* Modular JavaScript
+* Better code organization
+
+---
+
+# 🎯 Learning Highlights
+
+This project demonstrates:
+
+* DOM Manipulation
+* Event Handling
+* Dynamic Card Rendering
+* JavaScript Arrays & Objects
+* ES6 Template Literals
+* Flexbox & CSS Grid
+* CSS Animations
+* Responsive Design
+* Component-based UI thinking
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+# 👨‍💻 Author
 
 **Harish Dubey**
 
-Aspiring Java Full Stack Developer
+Aspiring **Java Full Stack Developer** passionate about creating modern web interfaces and scalable frontend applications.
 
-Currently Learning:
-
-- HTML
-- CSS
-- JavaScript
-
-
-## ⭐ Support
-
-If you like this project, consider giving it a **⭐ Star** on GitHub.
+If you like this project, **give it a ⭐ on GitHub!**
