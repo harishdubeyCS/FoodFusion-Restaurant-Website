@@ -98,10 +98,6 @@ Currently Learning:
 - JavaScript
 
 
-
->>>>>>> 49f0df3bc66eb9f6154d74302096083e38b14781
----
-
 ## ⭐ Support
 
 If you like this project, consider giving it a **⭐ Star** on GitHub.
