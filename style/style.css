@@ -428,6 +428,16 @@ img{
     background: transparent;
 }
 
+.download-section{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-section .content{
+    margin-left: 3rem;
+}
+
 .section{
     height: 80%;
     border-radius: 1rem;
@@ -468,4 +478,23 @@ img{
     width: 30rem;
     height: 30rem;
 }
+
+.download-image-box{
+    margin-top: 7rem;
+    width: 32rem;
+    height: 32rem;
+}
+
+.logo-section{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+}
+
+.line{
+    width: 100%;
+    height: .2rem;
+    background: var(--text-clr);
+}
+
  
