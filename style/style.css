@@ -309,7 +309,7 @@ img{
     height: 140px;
 }
 
-.popular-dishes-header{
+.popular-dishes-header, .testemonial-header{
     justify-content: space-between;
 }
 
@@ -334,7 +334,7 @@ img{
     background: transparent;
 }
 
-.S-heading{
+.S-heading, .testemonial-heading{
     font-size: 2.1rem;
     font-weight: 600;
     font-family: "Ubuntu", sans-serif;
@@ -487,6 +487,53 @@ img{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap:20px;
+}
+
+.testemonial-cards{
+    display: flex;
+    gap: 20px;
+    margin-top: 3rem;
+    animation: testimonialSlide 10s linear infinite;
+}
+
+.testemonial-cards .card{
+    align-items: flex-start;
+    text-align: left;
+    padding: 1rem;
+    flex: 0 0 calc((100% - 60px) / 3);
+    background: #f8ebd4e1;
+}
+
+.testemonial-cards .card p{
+    text-align: left;
+    font-size: .75rem;
+    margin-bottom: .5rem;
+}
+
+.testemonial-cards .card-image{
+    width: 3rem;
+    height: 3rem;
+}
+
+.testemonial-cards .card-name{
+    margin-top: .5rem;
+    font-size: .9rem;
+}
+
+.testemonial-cards:hover{
+    animation-play-state: paused;
+}
+
+@keyframes testimonialSlide {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
 }
 
 .reserve-section{
