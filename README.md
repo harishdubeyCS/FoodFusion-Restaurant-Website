@@ -32,7 +32,7 @@ It is designed as a scalable frontend project and will continue evolving with fe
 
 ---
 
-## 🦶 Our Food Menu Section
+## 🍕 Our Food Menu Section
 
 ![Menu](preview/preview7.png)
 
