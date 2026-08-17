@@ -1,8 +1,8 @@
 # 🍽️ FoodFusion - Modern Restaurant Landing Page
 
-FoodFusion is a **modern and responsive restaurant landing page** built using **HTML, CSS, and JavaScript**. The project focuses on a clean UI, smooth animations, interactive food sliders, dynamic menu rendering, and a premium restaurant experience.
+FoodFusion is a **modern and responsive restaurant landing page** built using **HTML, CSS, and JavaScript (ES6+)**. The project focuses on a clean UI, smooth animations, interactive food sliders, dynamic menu rendering, modular JavaScript architecture, and a premium restaurant experience.
 
-It is designed as a scalable frontend project and will continue evolving with features like **food search, category filters, add-to-cart functionality, LocalStorage, API integration, and customer testimonials**.
+The project uses **ES6 Modules** to organize JavaScript code into reusable components and separate data files. It will continue evolving with features like **food search, category filters, add-to-cart functionality, LocalStorage, API integration, wishlist, and reservation functionality**.
 
 ---
 
@@ -62,12 +62,15 @@ It is designed as a scalable frontend project and will continue evolving with fe
 * Soft color palette
 * Rounded components
 * Smooth hover effects
+* Modern responsive layout
 
 ### 🍽️ Dynamic Food Menu
 
-* Menu cards generated using JavaScript
-* Reusable data structure
+* Food cards generated dynamically using JavaScript
+* Reusable food data structure
 * Dynamic DOM rendering
+* Separate food data files
+* Component-based rendering
 
 ### 🖼️ Interactive Hero Slider
 
@@ -75,18 +78,31 @@ It is designed as a scalable frontend project and will continue evolving with fe
 * Active item highlighting
 * Main food image switching
 * Rotating plate animation
+* Smooth transitions
 
 ### 🎠 Food Carousel
 
 * Previous/Next navigation
 * Smooth horizontal sliding
 * Responsive card layout
+* Interactive navigation controls
+
+### ⭐ Customer Testimonials
+
+* Dynamic testimonial rendering
+* Customer profile information
+* Rating display
+* Testimonial slider
+* Separate testimonial data
+* Reusable testimonial component
 
 ### 📱 Responsive Layout
 
 * Flexible sections
-* Grid and Flexbox based design
+* CSS Grid and Flexbox
 * Mobile-friendly structure
+* Responsive food cards
+* Adaptive layouts
 
 ### 🎯 Animated Components
 
@@ -94,6 +110,7 @@ It is designed as a scalable frontend project and will continue evolving with fe
 * Navigation underline effects
 * Card interactions
 * Image transitions
+* Smooth slider animations
 
 ---
 
@@ -101,9 +118,10 @@ It is designed as a scalable frontend project and will continue evolving with fe
 
 | Technology        | Usage                            |
 | ----------------- | -------------------------------- |
-| HTML5             | Structure                        |
-| CSS3              | Styling & Layout                 |
+| HTML5             | Website Structure                |
+| CSS3              | Styling, Layout & Animations     |
 | JavaScript (ES6+) | Dynamic Rendering & Interactions |
+| ES6 Modules       | Modular JavaScript Architecture  |
 | Font Awesome      | Icons                            |
 | Google Fonts      | Typography                       |
 
@@ -121,7 +139,22 @@ FoodFusion/
 │   └── style.css
 │
 ├── js/
-│   └── js.js
+│   │
+│   ├── component/
+│   │   ├── category.js
+│   │   ├── circleSlider.js
+│   │   ├── foodCards.js
+│   │   ├── foodSlider.js
+│   │   └── testimonialSlider.js
+│   │
+│   ├── data/
+│   │   ├── categories.js
+│   │   ├── filterMenu.js
+│   │   ├── foodMenu.js
+│   │   ├── foods.js
+│   │   └── testimonialData.js
+│   │
+│   └── main.js
 │
 ├── images/
 │   ├── dish.png
@@ -136,17 +169,45 @@ FoodFusion/
 │   └── ...
 │
 └── preview/
-    ├── hero-section.png
-    ├── food-menu.png
-    ├── services.png
-    ├── reservation.png
-    ├── download-app.png
-    └── footer.png
+    ├── preview1.png
+    ├── preview2.png
+    ├── preview3.png
+    ├── preview4.png
+    ├── preview5.png
+    ├── preview6.png
+    ├── preview7.png
+    └── preview8.png
 ```
 
 ---
 
 # 💡 JavaScript Functionality
+
+The project uses **ES6 Modules** to keep the JavaScript code clean, reusable, and organized.
+
+### 🧩 Component Modules
+
+The `component` folder contains reusable UI functionality:
+
+* `category.js` - Dynamic food category rendering
+* `circleSlider.js` - Hero/category circular slider functionality
+* `foodCards.js` - Dynamic food card rendering
+* `foodSlider.js` - Food carousel functionality
+* `testimonialSlider.js` - Customer testimonial rendering and slider
+
+### 📦 Data Modules
+
+The `data` folder contains reusable application data:
+
+* `categories.js` - Food category data
+* `filterMenu.js` - Filter menu data
+* `foodMenu.js` - Food menu data
+* `foods.js` - Food item data
+* `testimonialData.js` - Customer testimonial data
+
+### 🚀 Main JavaScript
+
+`main.js` works as the main entry point of the application and imports the required components using ES6 `import/export`.
 
 The project currently includes:
 
@@ -156,12 +217,17 @@ The project currently includes:
 * Popular dishes card generation
 * Horizontal food slider
 * Previous/Next navigation controls
+* Dynamic testimonial rendering
+* Testimonial slider
+* Modular JavaScript architecture
+* Reusable components
+* Separate data and UI logic
 
 ---
 
 # 📌 Upcoming Features (Future Improvements)
 
-The project will be upgraded with the following features:
+The project will continue to be upgraded with the following features:
 
 ## 🔍 Food Search
 
@@ -176,6 +242,7 @@ The project will be upgraded with the following features:
 * Drinks
 * Desserts
 * Platters
+* Dynamic category filtering
 
 ## 🛒 Shopping Cart
 
@@ -196,19 +263,7 @@ The project will be upgraded with the following features:
 
 * Generate star ratings from data
 * Multiple rating support
-
-## 📢 Testimonials Section
-
-* Customer reviews
-* Profile images
-* Rating display
-* Auto slider
-
-## 📱 Mobile Optimization
-
-* Better responsive navigation
-* Touch-friendly sliders
-* Improved spacing
+* Interactive rating system
 
 ## 🌐 API Integration
 
@@ -228,14 +283,22 @@ The project will be upgraded with the following features:
 * Table booking
 * Date & time selection
 * Guest count
-* Validation
+* Form validation
+
+## 📱 Mobile Optimization
+
+* Better responsive navigation
+* Touch-friendly sliders
+* Improved spacing
+* Mobile interactions
 
 ## 📈 Performance Improvements
 
 * Lazy loading
 * Optimized images
-* Modular JavaScript
-* Better code organization
+* Code optimization
+* Improved loading performance
+* Better error handling
 
 ---
 
@@ -248,10 +311,15 @@ This project demonstrates:
 * Dynamic Card Rendering
 * JavaScript Arrays & Objects
 * ES6 Template Literals
+* ES6 Modules
+* `import` / `export`
+* Modular JavaScript Architecture
+* Reusable JavaScript Components
+* Separation of Data and UI Logic
 * Flexbox & CSS Grid
 * CSS Animations
 * Responsive Design
-* Component-based UI thinking
+* Component-based UI Thinking
 
 ---
 
