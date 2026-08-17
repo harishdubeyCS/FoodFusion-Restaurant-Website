@@ -20,17 +20,6 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-.card-image{
-    width: 12rem;
-}
-
-.card-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-
 li{
     list-style: none;
 }
@@ -171,7 +160,7 @@ img{
     gap: 1rem;
 }
 
-.border-btn{
+.border-btn, .food-filter-tabs .tab{
     background: var(--main-background);
     border: none;
     padding: .7rem 1.8rem;
@@ -182,7 +171,7 @@ img{
     transition: .3s ease-in-out;
 }
 
-.border-btn:hover{
+.border-btn:hover, .food-filter-tabs .tab:hover{
     background: var(--btn-clr);
 }
 
@@ -212,7 +201,7 @@ img{
 
 .mini-image-box.active{
     background: var(--btn-clr);
-    color: var(--text-clr);
+    letter-spacing: 1px;
     transform: scale(1.05);
 }
 
@@ -222,19 +211,11 @@ img{
     object-fit: cover;
 }
 
-.mini-image img{
-    width: 100%;
-    height: 100%;
-}
-
 .image-box{
     margin: 3rem 3rem 0 0 ;
     width: 23rem;
 }
 
-.image-box img{
-    width: 100%;
-}
 
 /* Plate continuous rotation effect */
 .rotating-plate {
@@ -376,37 +357,53 @@ img{
 }
 
 .card{
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1rem 0;
-    border-radius: 1rem;
+    padding: 1.2rem 1rem;
     border: 2px solid var(--btn-clr);
+    border-radius: 1rem;
+}
+
+.card-image{
+    width: 11rem;
+    height: 8rem;         
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-name{
     margin-top: 1rem;
-    font-size: 1.2rem;
-    font-weight: 590;
+    font-size: 1.25rem;
+    font-weight: 550;
+    letter-spacing: 1px;
 }
 
 .card .star{
-    padding: .5rem 0;
+    padding: .6rem 0;
+}
+
+.fa-star{
+    color: var(--btn-clr);
 }
 
 .card p{
-    font-size: .89rem;
-    color: rgba(41, 38, 38, 0.856);
-    max-width: 330px;
-    padding: .5rem 1rem;
+    font-size: .9rem;
+    color: rgba(41,38,38,.85);
+    min-height: 48px;       /* bas itna hi */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .card-rate{
     width: 100%;
+    display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    align-items: center;
 }
 
 .card-rate .price{
@@ -422,6 +419,7 @@ img{
     font-weight: 550;
     font-size: .88rem;
     transition: all .3s ease-in-out;
+    margin-top: auto;
 }
 
 .card-rate .add-btn:hover{
@@ -455,6 +453,40 @@ img{
 
 .btn-content span:nth-child(1){
     font-size: .76rem;
+}
+
+.apple-section , .play-section{
+    gap: 0.5rem;
+}
+
+.btn-icon i{
+    font-size: 2.3rem;
+}
+
+.regular-menu-section{
+    padding: 3rem 0 ;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.regular-menu-heading{
+    font-size: 2.3rem;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.food-filter-tabs{
+    gap: 1rem;
+}
+
+.tab.active{
+    background: var(--btn-clr);
+}
+
+.cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
 }
 
 .reserve-section{
@@ -511,7 +543,7 @@ img{
 
 .footer-head-section .footer-head-name{
     font-size: 2rem;
-    font-family: "Ubuntu", sans-serif;
+    /* font-family: "Ubuntu", sans-serif; */
 }
 
 .footer-head-section .email-box{
@@ -550,7 +582,8 @@ img{
 }
 
 .footer-link-section{
-    margin-top: 3rem;
+    padding-top: 1rem;
+    margin-top: 5rem;
     width: 80%;
     display: flex;
     justify-content: space-evenly;
@@ -587,9 +620,4 @@ img{
     text-align: center;
 }
 
-.cards{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:20px;
-}
 
